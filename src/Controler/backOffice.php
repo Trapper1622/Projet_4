@@ -55,3 +55,17 @@ function theEraser(){
     header('Location: admin.php?action=dashboard');
 }
 
+// suppression commentaire
+function forgetCom(){
+    $idComment = $_GET['idComment'];
+    $adminManager = new Admin();
+    $deleteSingleComment = $adminManager -> deleteSingleComment($idComment);
+    header('Location: admin.php?action=dashboard');
+}
+// validation commentaire
+function validCom(){
+    $idComment = $_GET['idComment'];
+    $adminManager = new Admin();
+    $validComment = $adminManager->validComment($idComment);
+    header('Location: admin.php?action=dashboard#ink');
+}

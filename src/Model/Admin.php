@@ -37,4 +37,33 @@ public function deleteArticle($idArticle){
     $deleteArticle -> execute(array($idArticle));
     return $deleteArticle;
 }
+
+//DELETE COMMENTS FROM DELETED CHAPTER INTO DB
+public function deleteComment($idArticle){
+    $db = $this -> dbConnect();
+    $deleteComment = $db->prepare('DELETE FROM t_comments WHERE com_art_id = ?');
+    $deleteComment -> execute(array($idArticle));
+    return $deleteComment;
+}
+//DELETE SIGNALED COMMENT FROM DASHBOARD INTO DB
+public function deleteSingleComment($idComment){
+    $db = $this -> dbConnect();
+    $deleteSingleComment = $db->prepare('DELETE FROM t_comments WHERE com_id = ?');
+    $deleteSingleComment -> execute(array($idComment));
+    return $deleteSingleComment;
+}
+//APPROVE SIGNALED COMMENT FROM DASHBOARD INTO DB
+public function validComment($idComment){
+    $db = $this -> dbConnect();
+    $validComment = $db->prepare('UPDATE t_comments SET com_signal = 0 WHERE com_id = ?');
+    $validComment -> execute(array($idComment));
+    return $validComment;
+}
+//UPDATE SIGNAL INTO DB
+public function updateSignal($signal){
+    $db = $this -> dbConnect();
+    $updateSignal = $db->prepare('UPDATE t_comments SET com_signal = (com_signal+1) WHERE com_id= ?');
+    $updateSignal->execute(array($signal));
+    return $updateSignal;
+}
 }

@@ -46,6 +46,22 @@ try{
           throw new Exception('Tous les champs ne sont pas remplis');
         }
       }
+      elseif(isset($_GET['action']) && isset($_GET['idArticle'])){
+        if($_GET['action'] == 'delete'){
+          theEraser();
+        }
+        if($_GET['action'] == 'edit'){
+          theEditor();
+        }   
+      }
+    }
+    elseif(isset($_GET['action']) && isset($_GET['idComment'])){
+      if($_GET['action'] == 'deleteCom'){
+        forgetCom();
+      }
+      elseif($_GET['action'] == 'approval'){
+        validCom();
+      }
     }
     else{
       throw new Exception('vous n\'êtes pas Admin');

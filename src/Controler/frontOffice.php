@@ -102,3 +102,9 @@ function newUser($username, $pass, $mail)
     header('Location: index.php');
 }
 
+// Signalement commentaire
+function addSignal($commentId, $articleId){
+    $commentSignal = new Admin();
+    $updateSignal = $commentSignal -> updateSignal($commentId);
+    header('Location:index.php?action=post&id='. $articleId .'#comments');
+}
