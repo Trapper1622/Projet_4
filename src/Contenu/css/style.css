@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #bfbfbf;
+  background-color: #787746;
+  font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titreBillet {
+  margin-bottom: 0px;
+}
+
+#contents {
+  margin-bottom: 30px;
+}
+
+#titreBlog,
+#piedBlog,
+#messageIntro {
+  text-align: center;
+}
+
+#titreReponses {
+  font-size: 100%;
+}
+
+#author {
+  margin-bottom: 5px;
+}
+
+#txtComment {
+  width: 50%;
+}
+
+/* Page Error */
+.display-1 {
+  text-align: center;
+  color: #e1b7b7;
+}
+
+.display-1 .fa {
+  animation: fa-spin 5s infinite linear;
+}
+
+.display-3 {
+  text-align: center;
+  color: #df726a;
+}
+
+.lower-case {
+  text-align: center;
+}
+
+.carre {
+  margin: 25px;
+}
+
