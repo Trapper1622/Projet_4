@@ -38,28 +38,28 @@ public function deleteArticle($idArticle){
     return $deleteArticle;
 }
 
-//DELETE COMMENTS FROM DELETED CHAPTER INTO DB
+// suppression commentaires du chapitre supprimé dans la BDD
 public function deleteComment($idArticle){
     $db = $this -> dbConnect();
     $deleteComment = $db->prepare('DELETE FROM t_comments WHERE com_art_id = ?');
     $deleteComment -> execute(array($idArticle));
     return $deleteComment;
 }
-//DELETE SIGNALED COMMENT FROM DASHBOARD INTO DB
+// suppression commentaires signalé (dashboard)
 public function deleteSingleComment($idComment){
     $db = $this -> dbConnect();
     $deleteSingleComment = $db->prepare('DELETE FROM t_comments WHERE com_id = ?');
     $deleteSingleComment -> execute(array($idComment));
     return $deleteSingleComment;
 }
-//APPROVE SIGNALED COMMENT FROM DASHBOARD INTO DB
+// validation commentaires signalé (dashboard)
 public function validComment($idComment){
     $db = $this -> dbConnect();
     $validComment = $db->prepare('UPDATE t_comments SET com_signal = 0 WHERE com_id = ?');
     $validComment -> execute(array($idComment));
     return $validComment;
 }
-//UPDATE SIGNAL INTO DB
+// mise a jour du signalement du commentaire
 public function updateSignal($signal){
     $db = $this -> dbConnect();
     $updateSignal = $db->prepare('UPDATE t_comments SET com_signal = (com_signal+1) WHERE com_id= ?');

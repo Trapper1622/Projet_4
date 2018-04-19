@@ -32,6 +32,11 @@ function subView(){
     require('view/viewSubscribe.php');
 }
 
+// Page connexion
+function connexView(){
+    require('view/viewConnexion.php');
+}
+
 // Ajout commentaire 
 function addComment($id_Articles, $username, $comment_text)
 {

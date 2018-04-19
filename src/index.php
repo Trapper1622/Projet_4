@@ -33,6 +33,9 @@ if (isset($_GET['action'])) {
   elseif ($_GET['action'] == 'subView'){
     subView();            
   }
+  elseif ($_GET['action'] == 'connexView'){
+    connexView();
+  }
   elseif ($_GET['action'] == 'addUser'){
     $username = htmlspecialchars($_POST['username']);
     $pass = htmlspecialchars($_POST['pass']);

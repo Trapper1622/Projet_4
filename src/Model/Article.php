@@ -1,11 +1,10 @@
 <?php
-//Calling Manager
+
 require_once('Model/Model.php');
 
-//ChapterObject : 
 class Article extends Model
 {
-//SINGLE CHAPTER DATA 
+// chapitre seul
 public function getArticle($id)
 {
     $db = $this -> dbConnect();
@@ -14,7 +13,7 @@ public function getArticle($id)
     $post = $req->fetch();
     return $post;
 }
-// ALL CHAPTERS DATA
+// tout les chapitre
 public function getAllArticles()
 {
     $db = $this -> dbConnect();

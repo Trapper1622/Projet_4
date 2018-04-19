@@ -1,8 +1,6 @@
 <?php $title = "Tableau de Bord" ?>
 <?php ob_start(); ?>	
 
-
-
 <div class="main">
   <h1>Tableau de Bord</h1>
  <div class=" sortie commentsEdition commentsPannel">
@@ -14,7 +12,7 @@
         $postAll->closeCursor();
         foreach($rows as $data){
         ?>
-          <li class="list"><?= htmlspecialchars($data['art_title']) ?><div class="icons"><i class="fa fa-check colorTeal">&nbsp;&nbsp;</i><a href="admin.php?action=edit&idArticle=<?=$data['art_id'] ?>"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a><a href="admin.php?action=delete&idArticle=<?=$data['art_id'] ?>"><i class="fa fa-trash colorRed" ></i></a></div></li>        
+          <li class="list"><?= htmlspecialchars($data['art_title']) ?><div class="icons"><a href="admin.php?action=edit&idArticle=<?=$data['art_id'] ?>"><i class="fa fa-pencil">&nbsp;&nbsp;</i></a><a href="admin.php?action=delete&idArticle=<?=$data['art_id'] ?>"><i class="fa fa-trash colorRed" ></i></a></div></li>        
         <?php      
         } 
         ?>  
@@ -26,7 +24,7 @@
       <?php            
       while($com = $comAll->fetch()){    
       ?>
-        <dt class="list">Chapitre : <?=$com['art_id'] ?></dt>               
+        <dt class="list">Chapitre : <?=$com['com_art_id'] ?></dt>               
         <dd><?= $com['com_text'] ?>
         </dd>
         <dd>Posté le <?= $com['com_date_short'] ?> et signalé <span class="fatRed"><?= $com['com_signal'] ?></span> fois.

@@ -5,29 +5,12 @@
 //LOGIN BOX
 if(empty($_SESSION['user_username'])){
 ?>
-  <button class="identifyB">s'identifier</button>
-    <div class="register">
-      <form action="index.php?action=record" method="post">
-        <div>
-        <label for="username">Pseudo</label><br />
-        <input type="text" id="username" name="username" placeholder="entrez votre pseudo">
-        </div>                     
-        <div>
-        <label for="pass">Mot de passe</label><br />
-        <input type="password" id="pass" name="pass" autocomplete="off" placeholder="et votre mot de passe">
-        </div>
-        <div>
-        <input id="submit" type="submit" value="GO !">
-        </div>
-        <div class="compte">Pas encore inscrit ? <span class="compteLien"><a href="index.php?action=subView">Créez un compte !</a></span>
-        </div>                      
-      </form>
-    </div>
+  <a href="index.php?action=connexView"><button class="identifyB">Connexion</button></a>
 <?php 
 }
 else{
 ?>
-        <a href="index.php?action=deco"><button class="identifyB">Déconnexion</button></a>    
+  <a href="index.php?action=deco"><button class="identifyB">Déconnexion</button></a>    
 <?php 
 }
 ?>
