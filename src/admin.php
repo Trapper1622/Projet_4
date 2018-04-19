@@ -54,7 +54,6 @@ try{
           theEditor();
         }   
       }
-    }
     elseif(isset($_GET['action']) && isset($_GET['idComment'])){
       if($_GET['action'] == 'deleteCom'){
         forgetCom();
@@ -63,6 +62,7 @@ try{
         validCom();
       }
     }
+  }
     else{
       throw new Exception('vous n\'êtes pas Admin');
     }        

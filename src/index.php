@@ -14,16 +14,16 @@ if (isset($_GET['action'])) {
   }
   elseif($_GET['action'] == 'signal'){
     $commentId = htmlspecialchars($_GET['id']);
-    $chapterId = htmlspecialchars($_GET['idChapter']);
-    addSignal($commentId,$chapterId);
+    $articlerId = htmlspecialchars($_GET['idArticle']);
+    addSignal($commentId,$articlerId);
   }
   elseif ($_GET['action'] == 'addComment') {
     if (isset($_GET['id']) && $_GET['id'] > 0) {
-      $id_Chapters = htmlspecialchars($_GET['id']); 
+      $id_Articles = htmlspecialchars($_GET['id']); 
       $username = htmlspecialchars($_POST['username']);
       $comment_text = htmlspecialchars($_POST['comment_text']);
       if (!empty($username) && !empty($comment_text)) {
-        addComment($id_Chapters, $username, $comment_text);
+        addComment($id_Articles, $username, $comment_text);
       }
       else {
         throw new Exception('tous les champs ne sont pas remplis');

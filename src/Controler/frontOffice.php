@@ -21,6 +21,7 @@ function setArticle($id)
     $post = $articleManager -> getArticle($id);
     if(!$post){
         throw new Exception('numéro de chapitre inexistant');
+        
     }   
     $comments = $commentManager -> getArticleComments($id);
     require('view/viewArticle.php');
@@ -106,5 +107,5 @@ function newUser($username, $pass, $mail)
 function addSignal($commentId, $articleId){
     $commentSignal = new Admin();
     $updateSignal = $commentSignal -> updateSignal($commentId);
-    header('Location:index.php?action=post&id='. $articleId .'#comments');
+    header('Location: index.php?action=post&id='.$articleId.'#comments');
 }

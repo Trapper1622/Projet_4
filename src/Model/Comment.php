@@ -31,7 +31,7 @@ public function commentStats(){
 // Signalement du commentaire dans le dashboard
 public function printComment(){
     $db = $this -> dbConnect();
-    $comAll = $db->query('SELECT com_id, com_art_id, com_signal, com_text, DATE_FORMAT(com_date, \'%d/%m/%Y\') AS com_date_short FROM t_comments INNER JOIN t_articles WHERE com_signal >2 && com_art_id = t_articles.art_id ORDER BY com_signal DESC');
+    $comAll = $db->query('SELECT com_id, com_art_id, com_signal, com_text, DATE_FORMAT(com_date, \'%d/%m/%Y\') AS com_date_short FROM t_comments INNER JOIN t_articles WHERE com_signal >=1 && com_art_id = t_articles.art_id ORDER BY com_signal DESC');
     return $comAll;
 }
 }
