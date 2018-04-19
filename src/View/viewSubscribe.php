@@ -1,34 +1,45 @@
 <?php $title = "Page d'inscription" ?>
 <?php ob_start(); ?>
-<div class="main">       
-        <div class="sub">
-                <form action="index.php?action=addUser" method="post">
-                        <div>
-                        <label for="username">Pseudo</label><br />
-                        <input type="text" id="username" name="username" required="valid" placeholder="choisissez votre pseudo" > 
-                        </div>
-                        <div>
-                        <label for="pass">Mot de passe</label><br />
-                        <input type="password" id="pass" name="pass" required="valid" autocomplete="off" placeholder="choisissez votre mot de passe">
-                        </div>
-                        <div>
-                        <label for="pass2">Confirmation du mot de passe</label><br />
-                        <input type="password" id="pass2" name="pass2" required="valid" autocomplete="off" placeholder="confirmez votre mot de passe">
-                        </div>
-                        <div>
-                        <label for="mail">Adresse email</label><br />
-                        <input type="text" id="mail" name="mail" required="valid" placeholder="renseignez votre email" >
-                        </div>
-                        <div>
-                        <input type="checkbox" name="choix" required="valid"> J'ai lu les règles d'usage et j'accepte de les respecter.</br>
-                        <input type="submit" name="addUser" value="S'inscrire" />
-                        </div>
-                </form>
+
+<div class="container">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <center><h2 id="login-name">s'inscrire</h2></center>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" id="login">
+      <form action="index.php?action=addUser" method="post">
+        <div class="form-group">
+          <label class="user" for="username"> Pseudo:  </label>
+          <input type="text" class="form-control" id="text1" name="username" required="valid" placeholder="choisissez votre pseudo">
         </div>
-        <div>
-                <p><a href="../index.php">Revenir à la page d'accueil</a></p>
+        <div class="form-group">
+          <label class="user" for="mail"> Adresse email: </label>
+          <input type="email" class="form-control" id="text2" name="mail" required="valid" placeholder="renseignez votre email">
         </div>
+        <div class="form-group">
+          <label class="user"  for="pass"> Mot de passe: </label>
+          <input type="password" class="form-control" id="text2" name="pass2" required="valid" autocomplete="off" placeholder="confirmez votre mot de passe">
+        </div>
+        <div class="form-group" for="pass2">
+          <label class="user">Confirmation du mot de passe: </label>
+          <input type="password" class="form-control" id="text2" name="pass" required="valid" autocomplete="off" placeholder="choisissez votre mot de passe">
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-success btn-other" value="Envoyer" style="border-radius:0px;">
+          <input type="reset" class="btn btn-danger btn-other" value="Reset" style="border-radius:0px;">
+        </div>
+        <br/><br/><br/>
+        <a href="index.php?action=connexView" style="color: white; font-size: 15px; float: right; margin-right: 10px;"> Connexion </a>
+      </form>
+    </div>
+  </div>
 </div>
+<div>
+  <center><p class="retour-inscrip"><a href="index.php">Revenir à la page d'accueil</a></p></center>
+</div>
+
 <?php $contents = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>

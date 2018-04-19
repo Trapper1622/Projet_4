@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1 class="display-3 text-center text-white mt-4">Business Name or Tagline</h1>
+            <!-- <h1 class="display-3 text-center mt-4">Un billet simple pour l'Alaska</h1> -->
           </div>
         </div>
       </div>
@@ -20,9 +20,6 @@
           <h2 class="mt-4">What We Do</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-          <p>
-            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-          </p>
         </div>
         <div class="col-sm-4">
           <h2 class="mt-4">Contact Us</h2>
@@ -56,7 +53,7 @@
               <p class="card-text"><?= $data['art_text'] ?></p>
             </div>
             <div class="card-footer">
-              <a href="index.php?action=post&id=<?= $data['art_id'] ?>" class="btn btn-primary">Voir l'article</a>
+              <a href="index.php?action=post&id=<?= $data['art_id'] ?>" class="btn btn_color">Voir l'article</a>
               <br/>
               <br/>
               <time><?= $data['art_date_fr'] ?></time>

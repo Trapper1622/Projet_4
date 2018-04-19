@@ -1,14 +1,29 @@
+/* Couleur :
+          #343838 rgb(52, 56, 56)
+          #005F6B rgb(0, 95, 107)
+          #008C9E rgb(0, 140, 158)
+          #00B4CC rgb(0, 180, 204)
+          #00DFFC rgb(0, 223, 252)
+*/
 
 body {
-  color: #bfbfbf;
-  background-color: #787746;
+  color: #00B4CC;
+  background-color: #343838;
   font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
   padding-top: 54px;
-
 }
 
-h1 {
-  color: white;
+nav {
+  background-color: #005F6B;
+  color: #fff;
+}
+
+footer {
+  background-color: #005F6B;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #00DFFC;
 }
 
 a {
@@ -23,10 +38,29 @@ a {
   }
 }
 
+.btn_color {
+  background-color: #005F6B;
+  color: #00DFFC;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.card {
+  color: #00B4CC;
+}
+
+.identifyB {
+  background-color: #00B4CC;
+  color: #fff;
+}
+
 .business-header {
   height: 50vh;
   min-height: 300px;
-  background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+  background: url('../images/imgUne.jpg') center center no-repeat scroll;
+  border: 2px solid #00DFFC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -101,25 +135,13 @@ a {
   background-color: rgba(13, 13, 13, 0.2);
   min-height: 500px;
   padding: 40px 80px 40px 80px;
-  box-shadow: -10px -10px 9px #33cc33;
+  box-shadow: -10px -10px 9px #00DFFC;
   margin: 0 auto;
 }
 
 .user {
   font-size: 29px;
   font-family: arabic typesetting;
-  color: white;
-}
-
-#iconn {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  color: white;
-}
-
-#iconn1 {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
   color: white;
 }
 
@@ -138,4 +160,8 @@ a {
   float: left;
   height: 40px;
   font-size: 18px;
+}
+
+.retour-inscrip {
+  margin-top: 25px;
 }
