@@ -3,6 +3,7 @@ body {
   color: #bfbfbf;
   background-color: #787746;
   font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+  padding-top: 54px;
 
 }
 
@@ -13,6 +14,30 @@ h1 {
 a {
   text-decoration: none;
 }
+
+/*HOME*/
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.business-header {
+  height: 50vh;
+  min-height: 300px;
+  background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.card {
+  height: 100%;
+}
+
+/* FIN HOME */
 
 .titreBillet {
   margin-bottom: 0px;
@@ -69,6 +94,7 @@ a {
   font-size: 55px;
   padding-bottom: 50px;
   color: white;
+  text-transform: uppercase;
 }
 
 #login {
@@ -107,7 +133,7 @@ a {
   height: 40px;
 }
 
-.btn {
+.btn-other {
   width: 50%;
   float: left;
   height: 40px;

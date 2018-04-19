@@ -7,7 +7,7 @@ class Admin extends Model
 // Publication article (bdd)
 public function postArticle($title, $article_img, $article_text)
 {
-    $article_img = "public/images/".$article_img;
+    $article_img = "Contenu/images/".$article_img;
     $db = $this -> dbConnect();
     $postArticle = $db->prepare('INSERT INTO t_articles(art_title, art_img, art_text, art_date) VALUES(?,?,?, NOW())');
     $affectedLines = $postArticle->execute(array($title, $article_img, $article_text));    
@@ -16,7 +16,7 @@ public function postArticle($title, $article_img, $article_text)
 // Edition article (bdd)
 public function upDataArticle($title, $article_img, $article_text, $idArticle)
 {
-    $article_img = "public/images/".$article_img;
+    $article_img = "Contenu/images/".$article_img;
     $db = $this -> dbConnect();
     $updateArticle = $db->prepare('UPDATE t_articles SET art_title=?, art_img=?, art_text=? WHERE art_id= ?');
     $affectedLines = $updateArticle->execute(array($title, $article_img, $article_text, $idArticle));    

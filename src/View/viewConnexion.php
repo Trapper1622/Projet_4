@@ -25,8 +25,8 @@
           </div>
         </div>
         <div class="form-group">
-          <input type="submit" class="btn btn-success" value="Connexion" style="border-radius:0px;">
-          <input type="reset" class="btn btn-danger" value="reset" style="border-radius:0px;">
+          <input type="submit" class="btn btn-success btn-other" value="Connexion" style="border-radius:0px;">
+          <input type="reset" class="btn btn-danger btn-other" value="reset" style="border-radius:0px;">
         </div>
         <br/>
         <br/>
