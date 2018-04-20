@@ -1,0 +1,43 @@
+/* connexion */
+
+#login-name {
+  font-size: 55px;
+  padding-bottom: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#login {
+  background-color: rgba(13, 13, 13, 0.2);
+  min-height: 500px;
+  padding: 40px 80px 40px 80px;
+  box-shadow: -10px -10px 9px #00DFFC;
+  margin: 0 auto;
+}
+
+.user {
+  font-size: 29px;
+  font-family: arabic typesetting;
+  color: white;
+}
+
+#text1 {
+  border-radius: 0;
+  height: 40px;
+}
+
+#text2 {
+  border-radius: 0;
+  height: 40px;
+}
+
+.btn-other {
+  width: 50%;
+  float: left;
+  height: 40px;
+  font-size: 18px;
+}
+
+.retour-inscrip {
+  margin-top: 25px;
+}

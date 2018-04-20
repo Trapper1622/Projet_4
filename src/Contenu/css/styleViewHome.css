@@ -1,0 +1,31 @@
+/*HOME*/
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.btn_color {
+  background-color: #005F6B;
+  color: #00DFFC;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.card {
+  color: #00B4CC;
+}
+
+.identifyB {
+  background-color: #00B4CC;
+  color: #fff;
+}
+
+.card {
+  height: 100%;
+}
+
+/* FIN HOME */
