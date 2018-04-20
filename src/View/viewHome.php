@@ -17,9 +17,10 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="mt-4">What We Do</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+          <h2 class="mt-4">Une Experience hors du commun</h2>
+          <p>Jean forteroche, l'auteur de ce roman, raconte chaque semaine au travers d'episodes, le destin d'un homme au travers de son journal intime.</p>
+          <p>Comme une serie télévisé, Un billet pour l'alaska est une experience unique, chaque semaine un épisode est posté sur le site.</p>
+          <p>Décrouvrez l'incroyable aventure d'un homme et de son environnement : l'alaska, vaste contré hostile aussi merveilleuse qu'etonnante.</p>
         </div>
         <div class="col-sm-4">
           <h2 class="mt-4">Contact Us</h2>
