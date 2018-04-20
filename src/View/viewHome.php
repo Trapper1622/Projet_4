@@ -3,13 +3,7 @@
 
     <!-- Header with Background Image -->
     <header class="business-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- <h1 class="display-3 text-center mt-4">Un billet simple pour l'Alaska</h1> -->
-          </div>
-        </div>
-      </div>
+      <img id="imageUne" src="Contenu/images/imgUne.jpg" class="img-fluid" alt="Responsive image">
     </header>
 
     <!-- Page Content -->
@@ -23,20 +17,7 @@
           <p>Décrouvrez l'incroyable aventure d'un homme et de son environnement : l'alaska, vaste contré hostile aussi merveilleuse qu'etonnante.</p>
         </div>
         <div class="col-sm-4">
-          <h2 class="mt-4">Contact Us</h2>
-          <address>
-            <strong>Start Bootstrap</strong>
-            <br>3481 Melrose Place
-            <br>Beverly Hills, CA 90210
-            <br>
-          </address>
-          <address>
-            <abbr title="Phone">P:</abbr>
-            (123) 456-7890
-            <br>
-            <abbr title="Email">E:</abbr>
-            <a href="mailto:#">name@example.com</a>
-          </address>
+          <img src="Contenu/images/jeanRochefort.jpg" alt="profil" class="img-thumbnail">
         </div>
       </div>
       <!-- /.row -->

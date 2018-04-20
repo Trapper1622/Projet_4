@@ -54,6 +54,7 @@
         </div>
       </div>
     </nav>
+  </div>
     <header>
         <h1 id="titreBlog">Mon Blog</h1>
       <p id="messageIntro">Un billet simple pour l'Alaska</p>
@@ -61,7 +62,6 @@
     <div id="contents">
       <?= $contents ?> <!-- element spécifique -->
     </div><!-- #contenu -->
-  </div><!-- #global -->
   <!-- Footer -->
     <footer class="py-5">
       <div class="container">
