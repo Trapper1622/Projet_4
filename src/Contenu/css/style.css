@@ -6,11 +6,19 @@
           #00DFFC rgb(0, 223, 252)
 */
 
+@import url(styleViewHome.css);
+@import url(styleViewError.css);
+@import url(styleViewConnexion.css);
+
 body {
   color: #00B4CC;
   background-color: #343838;
   font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
   padding-top: 54px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00DFFC;
 }
 
 nav {
@@ -22,140 +30,67 @@ footer {
   background-color: #005F6B;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  color: #00DFFC;
-}
-
 a {
   text-decoration: none;
 }
 
-/*HOME*/
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
-.btn_color {
-  background-color: #005F6B;
-  color: #00DFFC;
-}
-
-a:hover {
-  color: inherit;
-}
-
-.card {
-  color: #00B4CC;
-}
-
-.identifyB {
-  background-color: #00B4CC;
-  color: #fff;
-}
-
-.card {
-  height: 100%;
-}
-
-/* FIN HOME */
-
-.titreBillet {
-  margin-bottom: 0px;
+#imageUne {
+  border-top: 2px solid #00DFFC;
+  border-bottom: 2px solid #00DFFC;
+  margin-bottom: 50px;
 }
 
 #contents {
   margin-bottom: 30px;
 }
 
-#titreBlog,
-#piedBlog,
-#messageIntro {
+#titreBlog, #messageIntro {
   text-align: center;
 }
 
-#titreReponses {
-  font-size: 100%;
+.iconeNav {
+  color: #fff;
 }
 
-#author {
-  margin-bottom: 5px;
+.text-img {
+  padding-top: 20%;
 }
 
-#txtComment {
-  width: 50%;
-}
-
-#imageUne {
-  border: 2px solid #00DFFC;
-  margin-bottom: 50px;
-}
-
-/* Page Error */
-.display-1 {
+.business-header {
+  position: relative;
   text-align: center;
-  color: #e1b7b7;
-}
-
-.display-1 .fa {
-  animation: fa-spin 5s infinite linear;
-}
-
-.display-3 {
-  text-align: center;
-  color: #df726a;
-}
-
-.lower-case {
-  text-align: center;
-}
-
-.carre {
-  margin: 25px;
-}
-
-/* connexion */
-
-#login-name {
-  font-size: 55px;
-  padding-bottom: 50px;
-  color: white;
-  text-transform: uppercase;
-}
-
-#login {
-  background-color: rgba(13, 13, 13, 0.2);
-  min-height: 500px;
-  padding: 40px 80px 40px 80px;
-  box-shadow: -10px -10px 9px #00DFFC;
-  margin: 0 auto;
-}
-
-.user {
-  font-size: 29px;
-  font-family: arabic typesetting;
   color: white;
 }
 
-#text1 {
-  border-radius: 0;
-  height: 40px;
+.centered {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
 }
 
-#text2 {
-  border-radius: 0;
-  height: 40px;
+@media (max-width: 1200px) {
+  .centered {
+    font-size: 40px;
+  }
 }
 
-.btn-other {
-  width: 50%;
-  float: left;
-  height: 40px;
-  font-size: 18px;
+@media (max-width: 768px) {
+  .centered {
+    font-size: 30px;
+  }
 }
 
-.retour-inscrip {
-  margin-top: 25px;
+@media (max-width: 450px) {
+  .centered {
+    font-size: 20px;
+  }
 }
+
+@media (max-width: 350px) {
+  .centered {
+    font-size: 10px;
+  }
+}
+

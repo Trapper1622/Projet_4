@@ -1,11 +1,6 @@
 <?php $title = "Mon blog"; ?>
 <?php ob_start(); ?>
 
-    <!-- Header with Background Image -->
-    <header class="business-header">
-      <img id="imageUne" src="Contenu/images/imgUne.jpg" class="img-fluid" alt="Responsive image">
-    </header>
-
     <!-- Page Content -->
     <div class="container">
 
