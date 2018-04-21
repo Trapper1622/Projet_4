@@ -11,21 +11,21 @@
   color: #00DFFC;
 }
 
-a:hover {
-  color: inherit;
-}
-
 .card {
   color: #00B4CC;
 }
 
-.identifyB {
-  background-color: #00B4CC;
-  color: #fff;
-}
-
 .card {
   height: 100%;
+}
+
+.block_about {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.block_card {
+  margin-bottom: 100px;
 }
 
 /* FIN HOME */

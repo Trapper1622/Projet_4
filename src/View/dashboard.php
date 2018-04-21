@@ -36,7 +36,7 @@
         ?>                    
       </dl>
   </div>
-  <div class="sortie commentsEdition">
+  <div class="sortie commentsEdition stat">
     <h2> Mes utilisateurs</h2>
     <?php 
     $userAll = $useAll->fetch(); 
@@ -48,7 +48,7 @@
     L'utilisateur enregistré le plus récent est <span class="fatRed"><?= $userInfo['user_username'] ?></span>, le <?=$userInfo['reg_date'] ?>.<br />
     </p>
     </div>
-  <div>
+  <div class="block_back">
     <p><a href="index.php">Accéder au site</a></p>
     <p><a href="admin.php?action=edition">Accéder à l'Interface d'Edition</a></p>
   </div>       
@@ -57,7 +57,7 @@
 
 <?php $contents = ob_get_clean(); ?>
 
-<?php require('view/template.php'); ?>
+<?php require('view/templateAdmin.php'); ?>
 
 
 

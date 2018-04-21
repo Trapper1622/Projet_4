@@ -6,8 +6,6 @@
           #00DFFC rgb(0, 223, 252)
 */
 
-@import url(styleViewHome.css);
-
 body {
   color: #00B4CC;
   background-color: #343838;
@@ -32,40 +30,12 @@ a {
   text-decoration: none;
 }
 
-#imageUne {
-  border-top: 2px solid #00DFFC;
-  border-bottom: 2px solid #00DFFC;
-  margin-bottom: 50px;
-}
-
 #contents {
   margin-bottom: 30px;
 }
 
-#titreBlog, #messageIntro {
-  text-align: center;
-}
-
 .iconeNav {
   color: #fff;
-}
-
-.text-img {
-  padding-top: 20%;
-}
-
-.business-header {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
 }
 
 .btn-other {
@@ -84,27 +54,17 @@ a:hover {
   color: inherit;
 }
 
-@media (max-width: 1200px) {
-  .centered {
-    font-size: 40px;
-  }
+.main h1 {
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .centered {
-    font-size: 30px;
-  }
+.colorRed {
+  color: red;
 }
 
-@media (max-width: 450px) {
-  .centered {
-    font-size: 20px;
-  }
+.stat, .block_back {
+  text-align: center;
 }
 
-@media (max-width: 350px) {
-  .centered {
-    font-size: 10px;
-  }
-}
+
 

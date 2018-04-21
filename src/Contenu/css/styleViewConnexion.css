@@ -21,23 +21,11 @@
   color: white;
 }
 
-#text1 {
-  border-radius: 0;
-  height: 40px;
-}
-
-#text2 {
-  border-radius: 0;
-  height: 40px;
-}
-
-.btn-other {
-  width: 50%;
-  float: left;
-  height: 40px;
-  font-size: 18px;
-}
-
 .retour-inscrip {
   margin-top: 25px;
+}
+
+.block_connex,
+.block_subscribe {
+  margin-bottom: 100px;
 }

@@ -1,0 +1,30 @@
+.block_article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.block_commentaire {
+  text-align: center;
+}
+
+.signal {
+  color: #fff;
+}
+
+.text_article {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.pseudo_post_com {
+  margin-bottom: 15px;
+}
+
+#postCom {
+  background-color: rgba(13, 13, 13, 0.2);
+  min-height: 200px;
+  padding: 40px 80px 40px 80px;
+  box-shadow: -10px -10px 9px #00DFFC;
+  margin: 0 auto;
+}

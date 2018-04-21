@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="Contenu/css/style2.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="Contenu/css/style.css" />
   
   <!-- Pour la page error -->
   <link rel="icon" href="images/a.png" type="images/water.png" />

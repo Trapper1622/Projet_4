@@ -6,7 +6,9 @@
           #00DFFC rgb(0, 223, 252)
 */
 
-@import url(styleViewHome.css);
+@import url(styleViewError.css);
+@import url(styleViewConnexion.css);
+@import url(styleViewArticle.css);
 
 body {
   color: #00B4CC;
@@ -36,6 +38,8 @@ a {
   border-top: 2px solid #00DFFC;
   border-bottom: 2px solid #00DFFC;
   margin-bottom: 50px;
+  height: 400px;
+  width: 100%;
 }
 
 #contents {
