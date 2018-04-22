@@ -54,15 +54,16 @@
      <!-- Footer -->
     <footer class="py-5">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Jean Rochefort 2018</p>
       </div>
 
     </footer>
+  <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+  <script type="text/javascript" src="Contenu/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
-  <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
-  <script type="text/javascript" src="Contenu/js/script.js"></script>
+  
 </body>
 
 </html>

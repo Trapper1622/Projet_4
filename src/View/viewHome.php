@@ -23,7 +23,7 @@
           while ($data = $postAll->fetch())
           {
           // extrait du texte
-          $extrait = substr($data['art_text'], 0, 100); // Recupere une portion de notre contenu
+          $extrait = substr($data['art_text'], 0, 200); // Recupere une portion de notre contenu
           $espace = strrpos($extrait, ' '); // Trouver le dernier espace juste apres le dernier mot de $extrait
           $extraitSpace = substr($extrait, 0, $espace).' ...'; // Recupere une portion de notre $extrait en prennat en charge le dernier espace
           ?>

@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #00DFFC;
 }
 
+h4 {
+  font-size: 40px !important;
+}
+
+h5 {
+  font-size: 25px !important;
+}
+
 nav {
   background-color: #005F6B;
   color: #fff;
@@ -53,18 +61,30 @@ a {
 a:hover {
   color: inherit;
 }
-
-.main h1 {
+.main, .main2 {
   text-align: center;
-}
-
-.colorRed {
-  color: red;
-}
+} 
 
 .stat, .block_back {
   text-align: center;
 }
 
+
+.bg__card__navbar {
+  background-color: #000000;
+}
+
+.bg__card__footer {
+  background-color: #000000 !important;
+}
+
+#add__new__list {
+  top: -38px;
+  right: 0px;
+}
+
+.card-text {
+  margin-bottom: 20px !important;
+}
 
 
