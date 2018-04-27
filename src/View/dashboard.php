@@ -29,7 +29,7 @@
                 <td><?= htmlspecialchars($data['art_title']) ?></td>
                 <td>
                   <a class="btn btn-sm btn-primary" href="admin.php?action=edit&idArticle=<?=$data['art_id'] ?>"><i class="far fa-edit"></i> edit</a>
-                  <a class="btn btn-sm btn-danger" href="admin.php?action=delete&idArticle=<?=$data['art_id'] ?>"><i class="fas fa-trash-alt"></i> delete</a>    
+                  <a class="btn btn-sm btn-danger" href="admin.php?action=delete&idArticle=<?=$data['art_id'] ?>"><i class="fas fa-trash-alt"></i> effacer</a>    
                 </td>
                 <td><a class="btn btn-sm btn-info" href="index.php?action=post&id=<?= $data['art_id'] ?>"><i class="fas fa-info-circle"></i> Voir l'article</a> </td>  
               <?php      
@@ -69,7 +69,7 @@
                 <td><?= $com['com_signal'] ?></td>
                 <td>
                   <a class="btn btn-sm btn-primary" href="admin.php?action=approval&idComment=<?=$com['com_id'] ?>"><i class="fas fa-check"></i> Valider</a>
-                  <a class="btn btn-sm btn-danger" href="admin.php?action=deleteCom&idComment=<?=$com['com_id'] ?>"><i class="fas fa-trash-alt"></i> delete</a>    
+                  <a class="btn btn-sm btn-danger" href="admin.php?action=deleteCom&idComment=<?=$com['com_id'] ?>"><i class="fas fa-trash-alt"></i> effacer</a>    
                 </td>  
               <?php      
               } 

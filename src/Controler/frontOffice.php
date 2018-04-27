@@ -40,7 +40,8 @@ function connexView(){
 // Ajout commentaire 
 function addComment($id_Articles, $username, $comment_text)
 {
-    $commentManager = new Comment();
+  $commentManager = new Comment();
+  if (trim($username) && trim($comment_text)) {
     $comments = $commentManager -> postArticleComment($id_Articles, $username, $comment_text);
     if ($comments === false) {
         throw new Exception('Impossible d\'ajouter le commentaire !');
@@ -48,6 +49,10 @@ function addComment($id_Articles, $username, $comment_text)
     else {
         header('Location: index.php?action=post&id=' . $id_Articles . '#comments');
     }
+  } 
+  else {
+    throw new Exception("Il faut remplir les champs");   
+  }      
 }   
 
 // Connexion
@@ -114,3 +119,6 @@ function addSignal($commentId, $articleId){
     $updateSignal = $commentSignal -> updateSignal($commentId);
     header('Location: index.php?action=post&id='.$articleId.'#comments');
 }
+
+// Pagination
+

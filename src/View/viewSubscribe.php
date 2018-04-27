@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
           <input type="submit" class="btn btn-success btn-other" value="Envoyer" style="border-radius:0px;">
-          <input type="reset" class="btn btn-danger btn-other" value="Reset" style="border-radius:0px;">
+          <input type="reset" class="btn btn-danger btn-other" value="Effacer" style="border-radius:0px;">
         </div>
         <br/>
         <br/>
