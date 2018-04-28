@@ -21,7 +21,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Jean Rochefort</a>
+        <a class="navbar-brand" href="index.php">Jean Forteroche</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
             <i class="fas fa-bars fa-2x iconeNav"></i>
@@ -31,19 +31,26 @@
           <ul class="navbar-nav ml-auto">
            <?php 
             //LOGIN BOX
-            if(empty($_SESSION['user_username'])){
+            if(!empty($_SESSION['user_username'])){
+              if($_SESSION['user_admin']){
+              ?>
+                <a href="admin.php?action=dashboard"><button class="btn identifyB btnAdmin">Admin</button></a> 
+                <a href="index.php?action=deco"><button class="btn identifyB">Déconnexion</button></a>
+              <?php
+              }
+              else {
+                ?>
+              <a href="index.php?action=deco"><button class="btn identifyB">Déconnexion</button></a>
+            <?php 
+              }
+            }
+            else{
             ?>
               <a href="index.php?action=connexView"><button class="btn identifyB">Connexion</button></a>
             <?php 
             }
-            else{
             ?>
-              <a href="index.php?action=deco"><button class="btn identifyB">Déconnexion</button></a>    
-            <?php 
-            }
-            ?>
-          </ul>
-          
+          </ul>     
         </div>
       </div>
     </nav>

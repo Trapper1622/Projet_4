@@ -27,7 +27,7 @@ try{
         $article_img = htmlspecialchars($_POST['art_img']);
         $article_text = ($_POST['art_text']);
         $idArticle = htmlspecialchars($_POST['idArticle']);
-        if(!empty($title) && !empty($article_img) && !empty($article_text)){
+        if(!empty($title) && !empty($article_text)){
           updateArticle($title, $article_img, $article_text, $idArticle);
         }
         else{

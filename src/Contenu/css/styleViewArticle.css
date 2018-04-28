@@ -1,6 +1,8 @@
 .block_article {
   margin-top: 50px;
   margin-bottom: 50px;
+  border-bottom: 5px solid #fff;
+  padding-bottom: 50px;
 }
 
 .block_commentaire {
@@ -18,6 +20,15 @@
 
 .pseudo_post_com {
   margin-bottom: 15px;
+}
+
+.block_comment {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 50px;
+}
+
+.titleComment {
+  font-size: 20px;
 }
 
 #postCom {

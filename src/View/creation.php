@@ -9,9 +9,11 @@
       <label  class="upper" for="art_img">Photo du Chapitre</label>
       <input class="upper" type="file" id="art_img" name="art_img" />
       <textarea id="mytextarea" name="art_text"></textarea>
+      <br />
       <input type="submit" value="Publier" />
     </form>
     <div>
+      <br />
       <p><a href="index.php">Accéder au site</a></p>
       <p><a href="admin.php?action=dashboard">Accéder au Tableau de Bord</a></p>
     </div>

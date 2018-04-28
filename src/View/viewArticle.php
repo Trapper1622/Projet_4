@@ -11,7 +11,6 @@
   </header>
   <p class="text_article"><?= $post["art_text"] ?></p>
   </article>
-  <hr />
   <div class="block_commentaire">
     <header>
     <h1 id="titrePreponses">Commentaires à <?= $post["art_title"] ?></h1>
@@ -27,9 +26,13 @@
     }
     else{
     foreach ($commentArray as $comment){   
-    ?>                   
-      <p id="t_comments-<?= $comment['com_id'] ?>"><span class="blue"><strong><?= htmlspecialchars($comment['com_username']) ?></strong></span> le <?= $comment['com_date_fr'] ?>- <span class="signal"><a href="index.php?action=signal&id=<?= $comment['com_id'] ?>&idArticle=<?= $post['art_id'] ?>"> signalez !</a></span></p>
-      <p><?= nl2br(htmlspecialchars($comment['com_text'])) ?></p>
+    ?>
+      <div class="block_comment">
+        <p id="t_comments-<?= $comment['com_id'] ?>"><span class="titleComment"><strong><?= htmlspecialchars($comment['com_username']) ?></strong></span><br/> le <?= $comment['com_date_fr'] ?></p>
+        <p><?= nl2br(htmlspecialchars($comment['com_text'])) ?></p>
+        <p><span class="signal"><a href="index.php?action=signal&id=<?= $comment['com_id'] ?>&idArticle=<?= $post['art_id'] ?>"> signalez !</a></span></p>
+        
+      </div>                   
     <?php
     }
     }

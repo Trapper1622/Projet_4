@@ -39,7 +39,6 @@
                 <br/>
                 <br/>
                 <time><?= $data['art_date_fr'] ?></time>
-                <a href="admin.php?action=dashboard">Admin</a>
               </div>
             </div>
           </div>
