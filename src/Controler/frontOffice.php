@@ -5,13 +5,22 @@ require('Model/Comment.php');
 require('Model/User.php');
 require('Model/Admin.php');
 
-// Article Accueil
+// Page all Article
 function setAllArticles()
 {
     $articleManager = new Article();
     $postAll = $articleManager -> getAllArticles();   
-    require('view/viewHome.php');
+    require('view/viewAllArticles.php');
 }
+
+// article limit Accueil
+function setLimitArticles()
+{
+  $articleManager = new Article();
+  $postLimit = $articleManager -> getLimitArticles();   
+  require('view/viewHome.php');
+}
+ 
 
 // Article vu
 function setArticle($id)

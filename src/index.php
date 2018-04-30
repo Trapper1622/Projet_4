@@ -30,6 +30,9 @@ if (isset($_GET['action'])) {
       }
     }
   }
+  elseif ($_GET['action'] == 'allArticles'){
+    setAllArticles();
+  }
   elseif ($_GET['action'] == 'subView'){
     subView();            
   }
@@ -73,7 +76,7 @@ if (isset($_GET['action'])) {
   }        
 }
 else {
-  setAllArticles();
+  setLimitArticles();
 }
 }
 catch(Exception $e){

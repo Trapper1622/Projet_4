@@ -92,6 +92,28 @@ a:hover {
   color: inherit;
 }
 
+.btn_color {
+  background-color: #005F6B;
+  color: #00DFFC;
+}
+
+.card {
+  color: #00B4CC;
+}
+
+.card {
+  height: 100%;
+}
+
+.block_about {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.block_card {
+  margin-bottom: 100px;
+}
+
 @media (max-width: 1200px) {
   .centered {
     font-size: 40px;

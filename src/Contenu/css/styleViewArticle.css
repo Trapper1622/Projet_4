@@ -38,3 +38,7 @@
   box-shadow: -10px -10px 9px #00DFFC;
   margin: 0 auto;
 }
+
+#txtComment {
+  margin-bottom: 15px;
+}

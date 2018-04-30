@@ -93,8 +93,7 @@
   </p>
   </div>
 <div class="block_back">
-  <p><a href="index.php">Accéder au site</a></p>
-  <p><a href="admin.php?action=edition">Accéder à l'Interface d'Edition</a></p>
+  <p><a href="index.php"><button class="btn identifyB">Accéder au site</button></a></p>
 </div>       
 </div>
 

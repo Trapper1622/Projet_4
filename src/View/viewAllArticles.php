@@ -1,26 +1,13 @@
-<?php $title = "Mon blog"; ?>
+<?php $title = "Mon Blog"; ?>
 <?php ob_start(); ?>
 
-    <!-- Page Content -->
+<!-- Page Content -->
     <div class="container">
-      <div class="block_about">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="mt-4">Une Experience hors du commun</h2>
-            <p>Jean forteroche, l'auteur de ce roman, raconte chaque semaine au travers d'episodes, le destin d'un homme au travers de son journal intime.</p>
-            <p>Comme une serie télévisé, Un billet pour l'alaska est une experience unique, chaque semaine un épisode est posté sur le site.</p>
-            <p>Décrouvrez l'incroyable aventure d'un homme et de son environnement : l'alaska, vaste contré hostile aussi merveilleuse qu'etonnante.</p>
-          </div>
-          <div class="col-sm-4">
-            <img src="Contenu/images/jeanRochefort.jpg" alt="profil" class="img-thumbnail">
-          </div>
-        </div> 
-      </div>
       <div class="block_card">
         <!-- /.row -->
         <div class="row">
           <?php
-          while ($data = $postLimit->fetch())
+          while ($data = $postAll->fetch())
           {
           // extrait du texte
           $extrait = substr($data['art_text'], 0, 200); // Recupere une portion de notre contenu
@@ -44,18 +31,14 @@
           </div>
           <?php      
           }
-          $postLimit->closeCursor(); 
+          $postAll->closeCursor(); 
           ?>
         </div>  
         <!-- /.row -->
-        <a href="index.php?action=allArticles"><button class="btn identifyB">Voir tout les Articles</button></a>
       </div>
     </div>
     <!-- /.container -->
 
+
 <?php $contents = ob_get_clean(); ?>
-<?php require('templateHome.php'); ?>
-
-
-
-    
+<?php require('template.php'); ?>
