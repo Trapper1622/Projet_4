@@ -22,4 +22,4 @@
   </div>
 <?php $contents = ob_get_clean(); ?>
 
-<?php require('view/template.php'); ?>
+<?php require('template.php'); ?>

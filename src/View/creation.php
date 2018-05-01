@@ -3,7 +3,7 @@
   <div class="main">   
     <h1>Interface d'Edition</h1>
     <div class="container">
-      <form class="entree commentsEdition" name="formulaire" id="formulaire" action="admin.php?action=publish" method="post">
+      <form class="entree commentsEdition" name="formulaire" id="formulaire" action="admin.php?action=publish" method="post" enctype="multipart/form-data">
       <label  for="title">Titre du Chapitre</label>
       <input type="text" id="title" name="title" /></br>
       <label  class="upper" for="art_img">Photo du Chapitre</label>
@@ -21,4 +21,4 @@
 </div>
 <?php $contents = ob_get_clean(); ?>
 
-<?php require('view/templateAdmin.php'); ?>
+<?php require('templateAdmin.php'); ?>

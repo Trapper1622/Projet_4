@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('Controler/backOffice.php');
+include('Controler/backOffice.php');
 try{   
   if (isset($_GET['action'])) {       
         

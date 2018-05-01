@@ -100,7 +100,7 @@
 
 <?php $contents = ob_get_clean(); ?>
 
-<?php require('view/templateAdmin.php'); ?>
+<?php require('templateAdmin.php'); ?>
 
 
 

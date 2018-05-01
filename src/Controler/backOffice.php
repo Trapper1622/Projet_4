@@ -2,7 +2,7 @@
 
 require('Model/Article.php');
 require('Model/Comment.php');
-require('Model/user.php');
+require('Model/User.php');
 require('Model/Admin.php');
 
 // Direction dashboard après identification
@@ -16,7 +16,7 @@ function goToDashboard(){
     $userInfos = $userManager ->lastStatUser();
     $useAll = $userManager ->userStats();
     $adminManager = new Admin();
-    require('view/dashboard.php');
+    require('View/dashboard.php');
 }
 
 // Ajout article
@@ -35,7 +35,7 @@ function updateArticle($title, $article_img, $article_text, $idArticle){
 
 // direction vers la page édition
 function goToEdition(){
-    require('view/creation.php');
+    require('View/creation.php');
 }
 
 // Edition article bouton
@@ -43,7 +43,7 @@ function theEditor(){
     $idArticle = $_GET['idArticle'];
     $adminManager = new Admin();
     $post = $adminManager -> editArticle($idArticle);
-    require('view/edition.php');
+    require('View/edition.php');
 }
 
 // suppression article
