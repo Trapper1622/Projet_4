@@ -18,17 +18,19 @@ class Article extends Model
   public function compterMesPosts()
   {
     $db = $this -> dbConnect();
-    $countPost = $db->query('SELECT count(art_id) as nbArt FROM t_articles');
+    $req = $db->query('SELECT art_id FROM t_articles');
+    $countPost = $req->rowCount();
     return $countPost;
+    // var_dump($countPost);
   }
 
   // compter le nombre de page
-  public function compterMesPages($nombreArticles, $nbArticlesPerPage)
-  {
-    $db = $this -> dbConnect();
-    $nombreDePages = ceil($nombreArticles / $nbArticlesPerPage);
-    return $nombreDePages;
-  }
+  // public function compterMesPages($nombreArticles, $nbArticlesPerPage)
+  // {
+  //   $nombreDePages = ceil($nombreArticles / $nbArticlesPerPage);
+  //   return $nombreDePages;
+  //   var_dump($nombreDePages);
+  // }
 
   // tout les chapitre
   public function getAllArticles($currentPage, $nbArticlesPerPage)

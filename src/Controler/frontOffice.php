@@ -11,7 +11,8 @@ function setAllArticles()
   $articleManager = new Article();
   $nombreArticles = $articleManager->compterMesPosts();
   $nbArticlesPerPage = 6;
-  $nombreDePages = $articleManager->compterMesPages($nombreArticles, $nbArticlesPerPage);
+  $nombreDePages = ceil($nombreArticles / $nbArticlesPerPage);
+  // $articleManager->compterMesPages($nombreArticles, $nbArticlesPerPage);
   $currentPage = 1;
   $postAll = $articleManager -> getAllArticles($currentPage, $nbArticlesPerPage);
   require('View/viewAllArticles.php');

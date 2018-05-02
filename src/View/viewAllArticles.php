@@ -31,6 +31,9 @@
           </div>
           <?php      
           }
+          for($i = 1; $i<=$nombreDePages;$i++) {
+            echo '<a href="index.php?page='.$i.'">'.$i.'</a> /';
+          }
           $postAll->closeCursor(); 
           ?>
         </div>  
