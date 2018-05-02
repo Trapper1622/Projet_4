@@ -9,7 +9,11 @@ require('Model/Admin.php');
 function setAllArticles()
 {
   $articleManager = new Article();
-  $postAll = $articleManager -> getAllArticles();   
+  $nombreArticles = $articleManager->compterMesPosts();
+  $nbArticlesPerPage = 6;
+  $nombreDePages = $articleManager->compterMesPages($nombreArticles, $nbArticlesPerPage);
+  $currentPage = 1;
+  $postAll = $articleManager -> getAllArticles($currentPage, $nbArticlesPerPage);
   require('View/viewAllArticles.php');
 }
 
