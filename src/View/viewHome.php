@@ -48,7 +48,7 @@
           ?>
         </div>  
         <!-- /.row -->
-        <a href="index.php?action=allArticles"><button class="btn identifyB">Voir tout les Articles</button></a>
+        <a href="index.php?action=allArticles&page=1"><button class="btn identifyB">Voir tout les Articles</button></a>
       </div>
     </div>
     <!-- /.container -->

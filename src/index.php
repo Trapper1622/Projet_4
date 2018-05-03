@@ -33,7 +33,12 @@ try{
       }
     }
     elseif ($_GET['action'] == 'allArticles'){
-      setAllArticles();
+      if (isset($_GET['page']) && $_GET['page'] > 0 ) {
+        setAllArticles();
+      }
+      else {
+        throw new Exception('aucune page envoyé');
+      }
     }
     elseif ($_GET['action'] == 'subView'){
       subView();            

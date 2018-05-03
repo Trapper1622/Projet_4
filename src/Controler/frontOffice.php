@@ -13,7 +13,7 @@ function setAllArticles()
   $nbArticlesPerPage = 6;
   $nombreDePages = ceil($nombreArticles / $nbArticlesPerPage);
   // $articleManager->compterMesPages($nombreArticles, $nbArticlesPerPage);
-  $currentPage = 1;
+  $currentPage = $_GET['page'];
   $postAll = $articleManager -> getAllArticles($currentPage, $nbArticlesPerPage);
   require('View/viewAllArticles.php');
 }

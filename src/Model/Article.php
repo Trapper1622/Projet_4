@@ -32,12 +32,19 @@ class Article extends Model
   //   var_dump($nombreDePages);
   // }
 
-  // tout les chapitre
+  // tout les chapitre avec pagination
   public function getAllArticles($currentPage, $nbArticlesPerPage)
   {
     $db = $this -> dbConnect();
     $depart = ($currentPage-1)*$nbArticlesPerPage;
     $postAll = $db->query('SELECT art_id, art_title, art_img, art_text, DATE_FORMAT(art_date, \'%d/%m/%Y à %Hh%imin\') AS art_date_fr FROM t_articles ORDER BY art_id DESC LIMIT '.$depart.','.$nbArticlesPerPage);
+    return $postAll;
+  }
+
+  public function getAllArticlesDashboard()
+  {
+    $db = $this -> dbConnect();
+    $postAll = $db->query('SELECT art_id, art_title, art_img, art_text, DATE_FORMAT(art_date, \'%d/%m/%Y à %Hh%imin\') AS art_date_fr FROM t_articles ORDER BY art_id DESC');
     return $postAll;
   }
 
