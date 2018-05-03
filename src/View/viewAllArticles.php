@@ -31,8 +31,14 @@
           </div>
           <?php      
           }
+          $currentPage = 1;
           for($i = 1; $i<=$nombreDePages;$i++) {
-            echo '<a href="index.php?page='.$i.'">'.$i.'</a> /';
+            if ($i == $currentPage) {
+              echo " $i /";
+            }
+            else {
+              echo '<a id="Pagination" href="index.php?action=allArticles&page='.$i.'">'.$i.'</a> /';
+            }
           }
           $postAll->closeCursor(); 
           ?>

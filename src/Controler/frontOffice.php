@@ -26,7 +26,6 @@ function setLimitArticles()
   require('View/viewHome.php');
 }
  
-
 // Article vu
 function setArticle($id)
 {

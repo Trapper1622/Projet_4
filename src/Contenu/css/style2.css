@@ -114,6 +114,11 @@ a:hover {
   margin-bottom: 100px;
 }
 
+#Pagination {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 @media (max-width: 1200px) {
   .centered {
     font-size: 40px;
