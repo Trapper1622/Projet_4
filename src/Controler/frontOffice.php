@@ -9,7 +9,12 @@ require('Model/Admin.php');
 function setAllArticles()
 {
   $articleManager = new Article();
-  $postAll = $articleManager -> getAllArticles();   
+  $nombreArticles = $articleManager->compterMesPosts();
+  $nbArticlesPerPage = 6;
+  $nombreDePages = ceil($nombreArticles / $nbArticlesPerPage);
+  // $articleManager->compterMesPages($nombreArticles, $nbArticlesPerPage);
+  $currentPage = $_GET['page'];
+  $postAll = $articleManager -> getAllArticles($currentPage, $nbArticlesPerPage);
   require('View/viewAllArticles.php');
 }
 
@@ -21,7 +26,6 @@ function setLimitArticles()
   require('View/viewHome.php');
 }
  
-
 // Article vu
 function setArticle($id)
 {

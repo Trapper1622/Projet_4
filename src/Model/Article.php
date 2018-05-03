@@ -13,8 +13,35 @@ class Article extends Model
     $post = $req->fetch();
     return $post;
   }
-  // tout les chapitre
-  public function getAllArticles()
+
+  // compter le nombre de post
+  public function compterMesPosts()
+  {
+    $db = $this -> dbConnect();
+    $req = $db->query('SELECT art_id FROM t_articles');
+    $countPost = $req->rowCount();
+    return $countPost;
+    // var_dump($countPost);
+  }
+
+  // compter le nombre de page
+  // public function compterMesPages($nombreArticles, $nbArticlesPerPage)
+  // {
+  //   $nombreDePages = ceil($nombreArticles / $nbArticlesPerPage);
+  //   return $nombreDePages;
+  //   var_dump($nombreDePages);
+  // }
+
+  // tout les chapitre avec pagination
+  public function getAllArticles($currentPage, $nbArticlesPerPage)
+  {
+    $db = $this -> dbConnect();
+    $depart = ($currentPage-1)*$nbArticlesPerPage;
+    $postAll = $db->query('SELECT art_id, art_title, art_img, art_text, DATE_FORMAT(art_date, \'%d/%m/%Y à %Hh%imin\') AS art_date_fr FROM t_articles ORDER BY art_id DESC LIMIT '.$depart.','.$nbArticlesPerPage);
+    return $postAll;
+  }
+
+  public function getAllArticlesDashboard()
   {
     $db = $this -> dbConnect();
     $postAll = $db->query('SELECT art_id, art_title, art_img, art_text, DATE_FORMAT(art_date, \'%d/%m/%Y à %Hh%imin\') AS art_date_fr FROM t_articles ORDER BY art_id DESC');

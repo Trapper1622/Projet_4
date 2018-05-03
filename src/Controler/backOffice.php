@@ -8,7 +8,7 @@ require('Model/Admin.php');
 // Direction dashboard après identification
 function goToDashboard(){
     $articleManager = new Article();
-    $postAll = $articleManager ->getAllArticles();
+    $postAll = $articleManager -> getAllArticlesDashboard();
     $commentManager = new Comment();
     $comAll = $commentManager ->printComment();
     $comStats = $commentManager ->commentStats();
