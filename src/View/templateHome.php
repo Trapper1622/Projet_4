@@ -66,7 +66,7 @@
      <!-- Footer -->
     <footer class="py-5">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Jean Rochefort 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Jean Forteroche 2018</p>
       </div>
 
     </footer>

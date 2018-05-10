@@ -72,7 +72,7 @@ try{
   }  
 }
 catch(Exception $e){
-  require('view/viewError.php');
+  require('View/viewError.php');
 }
 
 

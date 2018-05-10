@@ -32,7 +32,11 @@
           <?php      
           }
           $postAll->closeCursor(); 
-          for($i = 1; $i<=$nombreDePages;$i++) {
+          ?>
+        </div>  
+        <!-- /.row -->
+        <?php
+        for($i = 1; $i<=$nombreDePages;$i++) {
             if ($i == $currentPage) {
               echo " $i /";
             }
@@ -40,9 +44,7 @@
               echo '<a id="Pagination" href="index.php?action=allArticles&page='.$i.'">'.$i.'</a> /';
             }
           }
-          ?>
-        </div>  
-        <!-- /.row -->
+        ?>
       </div>
     </div>
     <!-- /.container -->
